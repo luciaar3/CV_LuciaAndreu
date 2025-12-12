@@ -1,0 +1,383 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #e8dfd3;
+            color: #333;
+        }
+
+        /* Header Navigation */
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: transparent;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        .logo .blue-square {
+            width: 12px;
+            height: 12px;
+            background-color: #0066ff;
+        }
+
+        .subtitle {
+            font-size: 0.5em;
+            font-weight: 300;
+            color: #666;
+            margin-left: 10px;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 0.95em;
+            transition: color 0.3s;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: #0066ff;
+        }
+
+        /* Main Content */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 80px);
+            padding: 50px;
+            position: relative;
+        }
+
+        /* Geometric Background Elements */
+        .bg-block-1 {
+            position: absolute;
+            width: 600px;
+            height: 400px;
+            background-color: #d4c4b0;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .bg-block-2 {
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            background-color: #c9b89a;
+            bottom: 100px;
+            right: 100px;
+            z-index: 0;
+        }
+
+        /* Profile Card */
+        .profile-card {
+            background-color: #f5f0eb;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            z-index: 1;
+            position: relative;
+            width: 350px;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 30px;
+            display: block;
+            background-color: #d4c4b0;
+        }
+
+        .profile-card h2 {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .profile-card .divider {
+            width: 50px;
+            height: 3px;
+            background-color: #0066ff;
+            margin: 15px auto;
+        }
+
+        .profile-card .role {
+            font-size: 0.95em;
+            color: #666;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            color: #333;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #0066ff;
+        }
+
+        /* Content Section */
+        .content-section {
+            margin-left: 80px;
+            max-width: 600px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .content-section h1 {
+            font-size: 5em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+
+        .content-section .tagline {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            color: #333;
+            font-weight: 300;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 0.95em;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: #0066ff;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #0052cc;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #333;
+            border: 2px solid #333;
+        }
+
+        .btn-secondary:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        .description {
+            font-size: 1em;
+            line-height: 1.8;
+            color: #555;
+            max-width: 500px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .container {
+                flex-direction: column;
+                padding: 30px;
+            }
+
+            .profile-card {
+                margin-bottom: 50px;
+            }
+
+            .content-section {
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .content-section h1 {
+                font-size: 4em;
+            }
+
+            .action-buttons {
+                justify-content: center;
+            }
+
+            .bg-block-1, .bg-block-2 {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-nav {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .main-nav {
+                gap: 20px;
+                font-size: 0.9em;
+            }
+
+            .content-section h1 {
+                font-size: 3em;
+            }
+
+            .content-section .tagline {
+                font-size: 1.2em;
+            }
+
+            .profile-card {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Sections for navigation */
+        section {
+            min-height: 100vh;
+            padding: 80px 50px;
+        }
+
+        #curriculum, #proyectos, #contacto {
+            background-color: #f5f0eb;
+        }
+
+        section h2 {
+            font-size: 3em;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Curriculum Section */
+        .timeline-item {
+            margin-bottom: 40px;
+            padding-left: 30px;
+            border-left: 3px solid #0066ff;
+        }
+
+        .timeline-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .timeline-item .period {
+            color: #0066ff;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item .company {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .timeline-item p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #0066ff;
+        }
+
+        .project-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact-info-section {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .contact-info-section a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 20px 0;
+            transition: color 0.3s;
+        }
+
+        .contact-info-section a:hover {
+            color: #0066ff;
+        }
