@@ -1,67 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Indice</title>
-    <link rel="stylesheet" href="CSS/main.css">
-</head>
-<body>
-    <!-- header -->
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body>
     <nav class="top-nav">
-        <div class="logo">
-            <div class="blue-square"></div>
-            <span>LUCIA ANDREU <span class="subtitle">/ DESARROLLADOR WEB</span></span>
-        </div>
-        <ul class="main-nav">
-            <li><a href="#inicio" class="active">SOBRE MÍ</a></li>
-            <li><a href="#curriculum">CURRÍCULUM</a></li>
-            <li><a href="#proyectos">PROYECTOS</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
-        </ul>
+      <div class="logo">
+        <div class="blue-square"></div>
+        <span
+          >LUCIA ANDREU <span class="subtitle">/ DESARROLLADOR WEB</span></span
+        >
+      </div>
+      <ul class="main-nav">
+        <li><a href="#inicio" class="active">SOBRE MÍ</a></li>
+        <li><a href="#curriculum">CURRÍCULUM</a></li>
+        <li><a href="#proyectos">PROYECTOS</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+      </ul>
     </nav>
 
-    <!-- Hero Section -->
     <section id="inicio">
-        <div class="container">
-            <div class="bg-block-1"></div>
-            <div class="bg-block-2"></div>
+      <div class="container">
+        <div class="bg-block-1"></div>
 
-            <!-- Profile Card -->
-            <div class="profile-card">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Tu Foto" class="profile-image">
-                <h2>LUCIA ANDREU</h2>
-                <div class="divider"></div>
-                <p class="role">Desarrollador Web</p>
-                
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+        <div class="profile-card">
+          <img
+            src="/assets/img/LuciaAndreu.jpg"
+            alt="Foto de Lucia Andreu"
+            class="profile-image"
+          />
+          <h2>LUCIA ANDREU</h2>
+          <div class="divider"></div>
+          <p class="role">Web Developer · JavaScript · Angular · Laravel</p>
 
-            <!-- Content Section -->
-            <div class="content-section">
-                <h1>Hola</h1>
-                <p class="tagline">Esto es lo que soy y lo que hago</p>
-                
-                <div class="action-buttons">
-                    <a href="#curriculum" class="btn btn-primary">CURRÍCULUM</a>
-                    <a href="#proyectos" class="btn btn-secondary">PROYECTOS</a>
-                </div>
-
-                <div class="description">
-                    <p>Soy un desarrollador web apasionado por crear experiencias digitales únicas y funcionales. Especializado en desarrollo front-end y back-end, me encanta transformar ideas en realidad a través del código.</p>
-                    <br>
-                    <p>Aquí puedes conocer mi historia, ver mis proyectos y descubrir cómo puedo ayudarte a llevar tu presencia digital al siguiente nivel.</p>
-                </div>
-            </div>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
         </div>
-    </section>
-    <footer>
 
+        <div class="content-section">
+          <h1>Hola</h1>
+          <p class="tagline">Esto es lo que soy y lo que hago</p>
+
+          <div class="action-buttons">
+            <a href="#curriculum" class="btn btn-primary">CURRÍCULUM</a>
+            <a href="#proyectos" class="btn btn-secondary">PROYECTOS</a>
+          </div>
+
+          <div class="description">
+            <p>
+              Soy un desarrollador web apasionado por crear experiencias
+              digitales únicas y funcionales. Especializado en desarrollo
+              front-end y back-end, me encanta transformar ideas en realidad a
+              través del código.
+            </p>
+            <br />
+            <p>
+              Aquí puedes conocer mi historia, ver mis proyectos y descubrir
+              cómo puedo ayudarte a llevar tu presencia digital al siguiente
+              nivel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="section-content projects-grid">
+        <div class="project-card">
+          <img src="assets/img/proyecto1.jpg" alt="Proyecto portfolio" />
+          <h3>Portfolio Web</h3>
+          <p>
+            Landing page responsive desarrollada con HTML, CSS y JavaScript.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/img/proyecto2.jpg" alt="Proyecto Laravel" />
+          <h3>Aplicación Laravel</h3>
+          <p>Gestión de contenidos con autenticación y base de datos.</p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <h3>Lucía Andreu</h3>
+          <p>Desarrolladora Web · Front-End & Back-End</p>
+        </div>
+
+        <div class="footer-center">
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+
+        <div class="footer-right">
+          <a href="#" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" aria-label="Correo">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 · Hecho con cariño, café y código ☕💻</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
