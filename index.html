@@ -1,130 +1,272 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Indice</title>
-    <link rel="stylesheet" href="CSS/main.css" />
-  </head>
-  <body>
-    <nav class="top-nav">
-      <div class="logo">
-        <div class="blue-square"></div>
-        <span
-          >LUCIA ANDREU <span class="subtitle">/ DESARROLLADOR WEB</span></span
-        >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indice</title>
+  <link rel="stylesheet" href="CSS/main.css" />
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="logo">
+      <div class="blue-square"></div>
+      <span>LUCIA ANDREU <span class="subtitle">/ DESARROLLADORA WEB</span></span>
+    </div>
+    <ul class="main-nav">
+      <li><a href="#inicio" class="active">SOBRE MÍ</a></li>
+      <li><a href="#habilidades">HABILIDADES</a></li>
+      <li><a href="#proyectos">PROYECTOS</a></li>
+      <li><a href="#contacto">CONTACTO</a></li>
+    </ul>
+  </nav>
+
+  <section id="inicio">
+    <div class="container">
+      <div class="bg-block-1"></div>
+
+      <div class="profile-card">
+        <img src="/assets/img/LuciaAndreu.jpg" alt="Foto de Lucia Andreu" class="profile-image" />
+        <h2>LUCIA ANDREU</h2>
+        <div class="divider"></div>
+        <p class="role">Web Developer · JavaScript · Angular · Laravel</p>
+
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
-      <ul class="main-nav">
-        <li><a href="#inicio" class="active">SOBRE MÍ</a></li>
-        <li><a href="#curriculum">CURRÍCULUM</a></li>
-        <li><a href="#proyectos">PROYECTOS</a></li>
-        <li><a href="#contacto">CONTACTO</a></li>
-      </ul>
-    </nav>
 
-    <section id="inicio">
-      <div class="container">
-        <div class="bg-block-1"></div>
+      <div class="content-section">
+        <h1>Hola</h1>
+        <p class="tagline">Esto es lo que soy y lo que hago</p>
 
-        <div class="profile-card">
-          <img
-            src="/assets/img/LuciaAndreu.jpg"
-            alt="Foto de Lucia Andreu"
-            class="profile-image"
-          />
-          <h2>LUCIA ANDREU</h2>
-          <div class="divider"></div>
-          <p class="role">Web Developer · JavaScript · Angular · Laravel</p>
-
-          <div class="social-links">
-            <a href="#" aria-label="Facebook"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="LinkedIn"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a href="#" aria-label="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
+        <div class="action-buttons">
+          <a href="#curriculum" class="btn btn-primary">CURRÍCULUM</a>
+          <a href="#contacto" class="btn btn-secondary">CONTACTO</a>
         </div>
 
-        <div class="content-section">
-          <h1>Hola</h1>
-          <p class="tagline">Esto es lo que soy y lo que hago</p>
-
-          <div class="action-buttons">
-            <a href="#curriculum" class="btn btn-primary">CURRÍCULUM</a>
-            <a href="#proyectos" class="btn btn-secondary">PROYECTOS</a>
-          </div>
-
-          <div class="description">
-            <p>
-              Soy un desarrollador web apasionado por crear experiencias
-              digitales únicas y funcionales. Especializado en desarrollo
-              front-end y back-end, me encanta transformar ideas en realidad a
-              través del código.
-            </p>
-            <br />
-            <p>
-              Aquí puedes conocer mi historia, ver mis proyectos y descubrir
-              cómo puedo ayudarte a llevar tu presencia digital al siguiente
-              nivel.
-            </p>
+        <div class="description">
+          <p>
+            Soy una desarrolladora web apasionada por crear experiencias
+            digitales únicas y funcionales. Especializada en desarrollo
+            front-end y back-end, me encanta transformar ideas en realidad a
+            través del código.
+          </p>
+          <br />
+          <p>
+            Aquí puedes conocer mi historia, ver mis proyectos y descubrir
+            cómo puedo ayudarte a llevar tu presencia digital al siguiente
+            nivel.
+          </p>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jldD0fZQbhw?si=3uNwjOZtBrgE3P51"
+              title="Vídeo presentación Lucía Andreu" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-    </section>
-    <section id="proyectos">
+    </div>
+  </section>
+  <section id="habilidades">
+    <div class="section-header-wrapper">
+      <h2>Habilidades</h2>
+
+      <!-- SVG al lado derecho de la pantalla, a la altura del título -->
+      <svg class="section-icon-side" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="8" y="12" width="48" height="32" rx="4" ry="4" fill="none" stroke="#0066ff" stroke-width="3" />
+        <line x1="24" y1="46" x2="40" y2="46" stroke="#0066ff" stroke-width="3" stroke-linecap="round" />
+        <polyline points="22,24 28,32 22,40" fill="none" stroke="#0066ff" stroke-width="3" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <polyline points="42,24 36,32 42,40" fill="none" stroke="#0066ff" stroke-width="3" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </div>
+
+    <div class="section-content skills-section">
+      <p class="section-text">
+        Durante mi formación en Desarrollo de Aplicaciones Web he trabajado con
+        distintas tecnologías orientadas al desarrollo front-end y back-end,
+        aplicando buenas prácticas y cuidando tanto el diseño como la lógica.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          HTML5
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          css
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          JavaScript
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 60%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          Angular
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 35%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          PHP
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 75%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          Laravel
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          MySQL
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          Git & GitHub
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          Scrum · Kanban
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 95%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="audio-wrapper">
+        <p class="audio-title">Top 5 lenguajes aprendidos este curso</p>
+        <audio class="audio-player" controls>
+          <source src="assets/audio/Habilidades, Lucía.m4a" type="audio/mpeg" />
+          Tu navegador no soporta audio.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="proyectos">
+    <div class="section-header-wrapper">
       <h2>Proyectos</h2>
-      <div class="section-content projects-grid">
+
+      <!-- SVG proyectos -->
+      <svg class="section-icon-side" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="8" y="10" width="48" height="40" rx="4" ry="4" fill="none" stroke="#0066ff" stroke-width="3" />
+        <line x1="8" y1="18" x2="56" y2="18" stroke="#0066ff" stroke-width="3" />
+        <rect x="14" y="24" width="14" height="10" rx="2" fill="none" stroke="#0066ff" stroke-width="2" />
+        <rect x="34" y="24" width="14" height="10" rx="2" fill="none" stroke="#0066ff" stroke-width="2" />
+      </svg>
+    </div>
+
+    <div class="section-content">
+      <p class="section-text">
+        Estos proyectos reflejan mi forma de trabajar: código limpio,
+        diseño cuidado y soluciones pensadas para personas reales.
+        Cada uno es un pequeño universo en expansión
+      </p>
+
+      <div class="projects-grid">
         <div class="project-card">
-          <img src="assets/img/proyecto1.jpg" alt="Proyecto portfolio" />
+          <img src="assets/img/proyecto1.png" alt="Portfolio Web" />
           <h3>Portfolio Web</h3>
           <p>
-            Landing page responsive desarrollada con HTML, CSS y JavaScript.
+            Landing page tipo CV desarrollada con HTML y CSS,
+            enfocada en diseño responsive y experiencia de usuario.
           </p>
         </div>
 
         <div class="project-card">
-          <img src="assets/img/proyecto2.jpg" alt="Proyecto Laravel" />
+          <img src="assets/img/proyecto2.jpg" alt="Aplicación Laravel" />
           <h3>Aplicación Laravel</h3>
-          <p>Gestión de contenidos con autenticación y base de datos.</p>
+          <p>
+            Aplicación web con autenticación, base de datos y estructura MVC
+            utilizando Laravel y MySQL.
+          </p>
         </div>
       </div>
-    </section>
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-left">
-          <h3>Lucía Andreu</h3>
-          <p>Desarrolladora Web · Front-End & Back-End</p>
+    </div>
+  </section>
+
+
+  <section id="contacto">
+    <div class="contact-wrapper">
+
+      <h2>Contacto</h2>
+      <p class="contact-intro">
+        ¿Tienes una idea, un proyecto o simplemente quieres saludar?
+        Mi bandeja de entrada siempre está abierta
+      </p>
+
+      <div class="contact-content">
+
+        <!-- Info -->
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <span>Email</span>
+            <a href="mailto:luciaandreuribelles@gmail.com">luciaandreuribelles@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span>LinkedIn</span>
+            <a href="https://www.linkedin.com/in/lucia-andreu-ribelles-897684360"
+              target="_blank">linkedin.com/luciaandreu</a>
+          </div>
+
+          <div class="contact-item">
+            <span>GitHub</span>
+            <a href="https://github.com/luciaar3" target="_blank">github.com/luciaar3</a>
+          </div>
         </div>
 
-        <div class="footer-center">
-          <a href="#inicio">Inicio</a>
-          <a href="#sobre-mi">Sobre mí</a>
-          <a href="#habilidades">Habilidades</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#contacto">Contacto</a>
-        </div>
+        <!-- Formulario -->
+        <form class="contact-form">
+          <input type="text" placeholder="Tu nombre" required />
+          <input type="email" placeholder="Tu email" required />
+          <textarea placeholder="Cuéntame tu idea..." rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
 
-        <div class="footer-right">
-          <a href="#" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="#" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="#" aria-label="Correo">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h3>Lucía Andreu</h3>
+        <p>Desarrolladora Web · Front-End & Back-End</p>
       </div>
 
-      <div class="footer-bottom">
-        <p>© 2025 · Hecho con cariño, café y código ☕💻</p>
+      <div class="footer-center">
+        <a href="#inicio">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
       </div>
-    </footer>
-  </body>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 · 2 DAW</p>
+    </div>
+  </footer>
+</body>
+
 </html>
